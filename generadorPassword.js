@@ -26,7 +26,8 @@ generateSecurePassword = (n,ip)=> {
             if (isValid) {finding = false; return password}
         }
         catch (e){
-            return "Halgo ha ocurrido, por favor ingrese una palabra y vuelva a intentarlo"
+            "Error: " + e.message;
+             console.log(e.message); 
         }
         
     }
